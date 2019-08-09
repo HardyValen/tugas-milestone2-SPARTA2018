@@ -4,88 +4,54 @@
 
 @section('content')
     @include('components.navbar-top')
-<<<<<<< HEAD
-=======
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-<center><img src = "{{URL::asset('assets/TermsAndConditionsImage.png')}}"></center>
-<section class = "main-about">
-    <h1><center>TERMS OF USE</center></h1>
-    <div class = "main-about-wrapper">
-        <div class = "main-about-content">
-            <font color = "#555555">
-            <p align = "justify">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec odio ultricies, 
-            dignissim justo a, <b>ullamcorper</b> sem. Sed vel accumsan justo, non elementum lacus. Donec 
-            iaculis pellentesque ex, ut gravida nibh rhoncus sit amet. Duis pulvinar felis et dui 
-            molestie dictum. Aliquam a ipsum eget ex ultricies accumsan. Vestibulum at enim non 
-            metus <b>rhoncus elementum</b>. Curabitur in nisi ex. Proin quis risus tincidunt, commodo arcu 
-            eu, varius velit. Nunc facilisis ex vitae tortor (placerat) <b>malesuada</b>. In tellus magna, 
-            rhoncus in feugiat et, dapibus in lacus. Mauris eget pulvinar augue.
-            </p>
-</br>
-            <h2><b>GENERAL</b></h2>
-            <p align = "justify">
+    @include('components.sidebar')
+
+<section class="main-generic">
+    <div class="main-generic-wrapper">
+        <img src="{{URL::asset('assets/feature.svg')}}" class="image">
+        <h1 class='main-generic-item'>PRODUCTS & SERVICES</h1>
+        <div class="main-generic-item">
+            <h2>CUS for User</h2>
+            <p>
+                The following is the flow of using the CUS application for users:
                 <ol>
-                    <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec odio 
-                    ultricies, dignissim justo a, ullamcorper sem.
-                    </li>
-                    <li>
-                    Sed vel accumsan justo, non elementum lacus. Donec iaculis pellentesque ex, ut 
-                    gravida nibh rhoncus sit amet.
-                    </li>
-                </ol>
-            </p>
-</br>
-            <h2><b>APPLICATION USAGE</b></h2>
-            <p align = "justify">
-                <ol>
-                    <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec odio 
-                    ultricies, dignissim justo a, ullamcorper sem.
-                    </li>
-                    <li>
-                    Sed vel accumsan justo, non elementum lacus. Donec iaculis pellentesque ex, ut 
-                    gravida nibh rhoncus sit amet.
-                    </li>
-                    <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec odio 
-                    ultricies, dignissim justo a, ullamcorper sem.
-                    </li>
-                    <li>
-                    Sed vel accumsan justo, non elementum lacus. Donec iaculis pellentesque ex, ut 
-                    gravida nibh rhoncus sit amet.
-                    </li>
-                </ol>
-            </p>
-</br>
-            <h2><b>PAYMENT</b></h2>
-            <p align = "justify">
-                <ol>
-                    <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec odio 
-                    ultricies, dignissim justo a, ullamcorper sem.
-                    </li>
-                    <li>
-                    Sed vel accumsan justo, non elementum lacus. Donec iaculis pellentesque ex, ut 
-                    gravida nibh rhoncus sit amet.
-                    </li>
-                    <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec odio 
-                    ultricies, dignissim justo a, ullamcorper sem.
-                    </li>
+                    <li>Customers select type of foods on the homepage of the application.</li>
+                    <li>Customers select the specific merchant to choose on the list of merchant page.</li>
+                    <li>Customers enter the estimated time for when the food will be picked up.</li>
+                    <li>The order will be received and processed by the merchant according to the information given by the user.</li>
+                    <li>The order is processed and finished prior to the given estimated time.</li>
+                    <li>The user arrives at the given estimated time, and pay the merchant with the amount stated in the application.</li>
                 </ol>
             </p>
         </div>
-        <div class="main-about-content" id="ytplayer"></div>
+        <div class="main-generic-item">
+            <h2>Application Features</h2>
+            <p>
+                <ol>
+                    <li>
+                        <b>Home</b><br>
+                        Besides being the main display after logging in, the main functions available in the
+                        application starts from the Home menu. In the Home menu, users can choose the
+                        available food categories. Food categories available in CUS application are
+                        martabak, chicken and duck, noodles and meatballs, fried rice, desserts, and
+                        beverages. From these category, then the user can choose the food they wanted to
+                        order.
+                    </li>
+                    <li>
+                    <b>List and shop details</b><br>
+                    In this feature, users will find out the merchant list according to the existing
+                    categories and information about the merchant such as merchant descriptions,
+                    opening hours, menu lists and prices of each menu.
+                    </li>
+                    <li>Customers enter the estimated time for when the food will be picked up.</li>
+                    <li>The order will be received and processed by the merchant according to the information given by the user.</li>
+                    <li>The order is processed and finished prior to the given estimated time.</li>
+                    <li>The user arrives at the given estimated time, and pay the merchant with the amount stated in the application.</li>
+                </ol>
+            </p>
         </div>
+
     </div>
 </section>
 @include('components.footer')
->>>>>>> 723562eaec19c15a23f65487d1d387bdef965054
 @endsection

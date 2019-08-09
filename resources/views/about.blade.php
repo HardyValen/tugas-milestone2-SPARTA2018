@@ -3,9 +3,6 @@
 @section('title', 'About CUS')
 
 @section('content')
-<<<<<<< HEAD
-    @include('components.navbar-top')
-=======
 @include('components.navbar-top')
 </br>
 </br>
@@ -69,5 +66,4 @@
         </div>
 </section>
 @include('components.footer')
->>>>>>> 723562eaec19c15a23f65487d1d387bdef965054
 @endsection

@@ -1,0 +1,76 @@
+#navbar {
+    transition: 0.5s ease-in-out; /* Transition effect when sliding down (and up) */
+}
+
+.navigation{
+    background-color:map-get($theme-colors, "primary");
+    @include shadow(6);
+    position: fixed;
+    width:100%;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+
+    ul {
+        padding-inline-start: 0px;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+        @include fluidmarginx(2rem, 5rem);
+        @include fluidmarginy(2rem, 2rem);
+        
+        @include montserrat();
+        @include fluidfontsize(1.2rem, 1.4rem);
+        font-weight:700;
+        text-transform: uppercase;
+
+        ul.navigation-items{
+            margin: 0;
+            li:not(:first-child)::before{
+                content: "\2003\2003|\2003\2003";
+            }
+
+            @media screen and (max-width:960px){
+                display: none;
+            }
+        }
+
+        .navigation-burger{
+            @media screen and (min-width:960px) {
+                display: none;
+            }
+        }
+
+        li {
+            color: white;
+
+            a {
+                letter-spacing: 1px;
+                border-bottom: 2px solid transparent;
+            }
+
+            .active-nav{
+                border-bottom: 2px solid white;
+            }
+
+            a:hover{
+                border-bottom: 2px solid white;
+            }
+
+            .navigation-logo{
+                @include fluidwidth(5rem, 8rem);
+                @include fluidheight(5rem, 8rem);
+                background: url(../assets/cusLogo.png);
+                background-size: cover;
+            }
+
+            h1 {
+                @include fluidfontsize(2.4rem, 3.6rem);
+                @include futuraMedium();
+            }
+        }
+    }
+}

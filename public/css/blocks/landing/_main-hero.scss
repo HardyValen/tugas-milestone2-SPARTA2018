@@ -1,0 +1,47 @@
+.main-hero{
+    min-height: 100%;
+    width:100%;
+    background: url(../assets/bgDesktop.jpg);
+    background-size:cover;
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-content: flex-end;
+    align-items: flex-end;
+    justify-content: flex-end;
+    
+    @include fluidpaddingx(2rem, 10rem);
+    @include fluidpaddingy(2.5rem, 6rem);
+
+    @media screen and (max-width: 960px) {
+       min-height: 70%;
+   }
+
+    .main-hero-wrapper{
+        @include fluidminheight(14rem, 20rem);
+        @include fluidpaddingright(0rem, 3rem);
+        @include fluidwidth(28rem, 64rem);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+        text-align: right;
+        border-right: 3px solid white;
+
+        @media screen and (max-width: 960px){
+            border-right: 3px solid transparent;
+        }
+
+        h1{
+            @include futuraRegular();
+            @include fluidfontsize(3.0rem, 4.8rem);
+            color: white;
+            letter-spacing: 1.6px;
+
+            b{
+                @include futuraBold();
+                @include fluidfontsize(3.6rem, 6.4rem);
+            }
+        }
+    }
+}
