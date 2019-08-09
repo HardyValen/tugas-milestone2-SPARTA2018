@@ -1,7 +1,7 @@
 # tugas-milestone2-SPARTA2018
 ## TUGAS MILESTONE 2 SPARTA HMIF ITB 2018 - WEBSITE CUS
 
-Proyek yang kami buat ini adalah sebuah website untuk aplikasi CUS. Website ini ditujukan untuk membentuk suatu web presence terhadap perusahaan yang kami beri bantuan yaitu CUS. Website ini bersifat statis, sehingga tujuan utama dari dibuatnya website ini tidak lain adalah mengenalkan perusahaan CUS kepada masyarakat luas dan membenarkan pandangan yang salah pada masyarakat mengenai CUS. Website ini memiliki berbagai bagian, seperti landing page, halaman about us, halaman terms of use, halaman kontak pemilik perusahaan, dan halaman yang bisa mengalihkan website ke Google Play. Selain itu, di bagian header terdapat link yang menuntun pada akun resmi perusahaan.
+Proyek yang telah kami susun ini adalah sebuah website untuk aplikasi CUS. Website ini ditujukan untuk membentuk suatu web presence terhadap perusahaan CUS. Website ini bersifat statis, sehingga tujuan utama dari dibuatnya website ini tidak lain adalah mengenalkan perusahaan CUS kepada masyarakat luas dan membenarkan pandangan yang salah pada masyarakat mengenai CUS. Website ini memiliki berbagai bagian, seperti landing page, halaman about us, halaman terms of use, halaman kontak pemilik perusahaan, dan halaman yang bisa mengalihkan website ke Google Play. Selain itu, di bagian header terdapat link yang menuntun pada akun resmi perusahaan.
 
 ### Get Started
 
@@ -40,11 +40,16 @@ Berkas yang telah diunduh disertai dengan Laravel akan menjalankan kode program 
     
 ### RUNNING THE TEST
 
-Pada dasarnya, tes yang terotomasi tidak dapat dilakukan. Cara untuk mengetes keberjalanan situs yang telah dibuat adalah dengan membuka situs yang telah kami buat, JIka situs yang telah dibuat sebelumnya dapat terbuka dengan baik dan tampilan situs sudah sesuai dengan harapan, maka uji jalan situs berhasil. Jika terdapat error pada keberjalanan situs, maka dapat dikatakan bahwa masih terdapat kesalahan pada pembuatan situs.
+Pada dasarnya, tes yang terotomasi tidak dapat dilakukan. Cara untuk mengetes keberjalanan situs yang telah dibuat adalah dengan membuka situs yang telah kami buat. Jika situs yang telah dibuat sebelumnya dapat dibuka dan tampilan situs sudah sesuai dengan harapan, maka uji coba situs berhasil. Jika terdapat error pada keberjalanan situs, maka dapat dikatakan bahwa masih terdapat kesalahan pada pembuatan situs, sehingga akan dicari kesalahan dalam kode untuk diperbaiki.
 
 ### DEPLOYMENT
 
+Untuk men-deploy website ke server, kelompok memanfaatkan layanan Heroku sesuai dengan langkah pada https://appdividend.com/2018/04/17/how-to-deploy-laravel-project-on-heroku/#Deploy_Laravel_Project_On_Heroku
+Prosedur ini membutuhkan Laravel, Git, serta Heroku CLI telah diinstal pada perangkat agar bisa dijalankan. Proyek yang ada akan
+diinisialisasi dalam repository Git dan  pengguna harus log in terlebih dahulu dalam Heroku. 
 
+Website yang telah berhasil di deploy dapat diakses melalui link berikut 
+http://peaceful-dusk-28494.herokuapp.com/landing
 
 ### BUILT WITH
 
@@ -56,7 +61,7 @@ Pada dasarnya, tes yang terotomasi tidak dapat dilakukan. Cara untuk mengetes ke
 
 ### CONTRIBUTING
 
-Pada dasarnya, kami terbuka pada kontribusi lain yang asalnya dari luar kelompok kami. Selain itu, pengguna yang ingin berkontribusi pada pengembangan situs ini dapat mulai dengan belajar terlebih dahulu mengenai pengembangan situs. Selain itu, sangat disarankan bagi pengguna yang ingin berkontribusi lebih lanjut pada situs ini untuk mengunduh XAMPP, Composer, dan Laravel yang bekerja dengan baik pada perangkat yang pengguna tersebut gunakan.
+Pada dasarnya, kami terbuka pada kontribusi lain yang asalnya dari luar kelompok kami. Selain itu, pengguna yang ingin berkontribusi pada pengembangan situs ini dapat mulai dengan belajar terlebih dahulu mengenai pengembangan situs. Selain itu, sangat disarankan bagi pengguna yang ingin berkontribusi lebih lanjut pada situs ini untuk mengunduh dan menginstal XAMPP, Composer, dan Laravel yang sesuai dengan spesifikasi perangkat pengguna
 
 ### VERSIONING
 
