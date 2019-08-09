@@ -50,9 +50,7 @@ h1 {
 
 // 1. -- Main Hero
  @import 'blocks/landing/main-hero';
- .main-hero{
-    @import 'component/header';
- }
+ 
 // 2. -- Main About
  @import 'blocks/landing/main-about';
  .main-about{

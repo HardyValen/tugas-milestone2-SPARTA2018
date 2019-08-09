@@ -793,28 +793,6 @@ h1 {
   }
 }
 
-.main-hero a {
-  color: #2F80ED;
-  -webkit-transition: all 0.1s;
-  transition: all 0.1s;
-  border-bottom: 1px solid transparent;
-}
-
-.main-hero a:hover {
-  border-bottom: 1px solid #2F80ED;
-}
-
-.main-hero a::after {
-  content: "\2002\02C3";
-  -webkit-transition: all 0.1s;
-  transition: all 0.1s;
-  opacity: 0;
-}
-
-.main-hero a:hover::after {
-  opacity: 1;
-}
-
 .main-about {
   min-height: 100%;
   width: 100%;
