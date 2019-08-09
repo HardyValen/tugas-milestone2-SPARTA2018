@@ -15,7 +15,7 @@ class PageViewController extends Controller
     }
 
     function viewTOC(){
-        return view('termsAndConditions');
+        return view('products');
     }
 
     function viewContact(){

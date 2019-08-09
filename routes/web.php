@@ -13,5 +13,5 @@
 Route::get('/', function() {return redirect()->to("/landing");});
 Route::get('/landing', 'PageViewController@viewLanding');
 Route::get('/about', 'PageViewController@viewAbout');
-Route::get('/terms-and-conditions', 'PageViewController@viewTOC');
+Route::get('/products', 'PageViewController@viewTOC');
 Route::get('/contact', 'PageViewController@viewContact');

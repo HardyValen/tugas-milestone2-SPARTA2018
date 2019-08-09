@@ -7,7 +7,7 @@
             <li class='navigation-item'><a href="/landing">Home</a></li>
             <li class='navigation-item'><a href="/about">About Cus</a></li>
             <li class='navigation-item'><a href="https://play.google.com/store/apps/details?id=user.com.cus&hl=in">Download App</a></li>
-            <li class='navigation-item'><a href="/terms-and-conditions">Terms & Conditions</a></li>
+            <li class='navigation-item'><a href="/products">Product & Services</a></li>
             <li class='navigation-item'><a href="/contact">Contact Us</a></li>
         </ul>
         <li class='navigation-burger'>
