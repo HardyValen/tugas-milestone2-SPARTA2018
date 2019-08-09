@@ -1793,6 +1793,35 @@ footer ul a:hover {
   width: 100%;
 }
 
+.main-generic .main-generic-wrapper .main-generic-item .main-generic-icons {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main-generic .main-generic-wrapper .main-generic-item .main-generic-icons {
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .main-generic .main-generic-wrapper .main-generic-item .main-generic-icons {
+    margin-top: calc(2rem + 0.5 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .main-generic .main-generic-wrapper .main-generic-item .main-generic-icons {
+    margin-top: 2.5rem;
+  }
+}
+
 .main-generic .main-generic-wrapper .main-generic-item .iframe-map {
   border-radius: 16px;
   border: 5px solid white;

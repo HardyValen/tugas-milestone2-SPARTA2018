@@ -19,8 +19,14 @@
                 Jawa Barat 40132
             </p>
         </div>
-        <div class="main-generic-item">
-            <!-- Filbert tolong -->
+        <div class="main-generic-item" >
+            <h2 style='text-align:center'>MEDIA</h2>
+            <ul class="main-generic-icons">
+                <li><a href="#"><i class="fab fa-youtube fa-2x"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram fa-2x"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter-square fa-2x"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook-square fa-2x"></i></a></li>
+            </ul>
         </div>
     </div>
 </section>

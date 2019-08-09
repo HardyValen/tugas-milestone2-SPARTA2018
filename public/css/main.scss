@@ -139,6 +139,15 @@ footer{
         .main-generic-item{
             width:100%;
 
+            .main-generic-icons{
+                list-style-type: none;
+                display:flex;
+                flex-direction: row;
+                justify-content: space-around;
+
+                @include fluidmargintop(2rem, 2.5rem);
+            }
+
             .iframe-map{
                 @include fluidwidth(16rem, 48rem);
                 @include fluidheight(12rem, 36rem);
