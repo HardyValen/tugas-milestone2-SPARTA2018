@@ -48,11 +48,11 @@ Pada dasarnya, tes yang terotomasi tidak dapat dilakukan. Cara untuk mengetes ke
 
 ### BUILT WITH
 
-a). Laravel 5.8 - Web Framework, PHP-based
-b). Composer - PHP dependency manager
-c). Npm - Other dependency manager
-d). SCSS - CSS Compiler
-e). HTML
+1. Laravel 5.8 - Web Framework, PHP-based
+2. Composer - PHP dependency manager
+3. Npm - Other dependency manager
+4. SCSS - CSS Compiler
+5. HTML
 
 ### CONTRIBUTING
 
