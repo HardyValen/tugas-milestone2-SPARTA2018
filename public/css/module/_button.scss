@@ -1,0 +1,22 @@
+.button-white{
+    background-color: transparent;
+    color: white !important;
+    border: 2px solid white;
+    border-radius: 10px;
+    @include montserrat();
+    @include fluidpaddingx(2rem, 3rem);
+    @include fluidpaddingy(1rem, 1.5rem);
+
+    @include fluidfontsize(1.2rem, 1.4rem);
+    letter-spacing: 1px;
+    transition: all 0.2s;
+
+    span{
+        font-weight: 700;
+    }
+}
+
+.button-white:hover{
+    background-color: map-get($theme-colors, "primary");
+    border: 2px solid map-get($theme-colors, "primary");
+}
