@@ -100,7 +100,7 @@
         </div>
     </section>
 
-    @include(components.footer)
+    @include('components.footer')
 
 <script src="{{URL::asset('js/main-youtube.js')}}"></script>
 @endsection
