@@ -50,7 +50,7 @@ h1 {
 
 // 1. -- Main Hero
  @import 'blocks/landing/main-hero';
- 
+
 // 2. -- Main About
  @import 'blocks/landing/main-about';
  .main-about{
@@ -147,9 +147,9 @@ footer{
             }
 
             .iframe-map{
-                @include fluidwidth(16rem, 48rem);
-                @include fluidheight(12rem, 36rem);
-                @include fluidpadding(2rem, 2rem);
+                @include fluidwidth(24rem, 48rem);
+                @include fluidheight(24rem, 36rem);
+                @include fluidpadding(0.4rem, 2rem);
                 @include fluidmarginbottom(2rem, 2rem);
                 border-radius: 16px;
                 border: 5px solid white;
@@ -159,6 +159,10 @@ footer{
 
         .main-generic-item:not(:first-child){
             @include fluidpaddingtop(3rem, 5rem);
+        }
+
+        ul{
+            padding-inline-start: 0px;
         }
 
         h1{

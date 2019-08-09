@@ -1808,12 +1808,12 @@ footer ul a:hover {
 }
 
 .main-generic .main-generic-wrapper .main-generic-item .iframe-map {
-  width: 16rem;
+  width: 24rem;
 }
 
 @media screen and (min-width: 320px) {
   .main-generic .main-generic-wrapper .main-generic-item .iframe-map {
-    width: calc(16rem + 32 * ((100vw - 32rem) / (96 - 32)));
+    width: calc(24rem + 24 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
@@ -1824,12 +1824,12 @@ footer ul a:hover {
 }
 
 .main-generic .main-generic-wrapper .main-generic-item .iframe-map {
-  height: 12rem;
+  height: 24rem;
 }
 
 @media screen and (min-width: 320px) {
   .main-generic .main-generic-wrapper .main-generic-item .iframe-map {
-    height: calc(12rem + 24 * ((100vw - 32rem) / (96 - 32)));
+    height: calc(24rem + 12 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
@@ -1840,12 +1840,12 @@ footer ul a:hover {
 }
 
 .main-generic .main-generic-wrapper .main-generic-item .iframe-map {
-  padding: 2rem;
+  padding: 0.4rem;
 }
 
 @media screen and (min-width: 320px) {
   .main-generic .main-generic-wrapper .main-generic-item .iframe-map {
-    padding: calc(2rem + 0 * ((100vw - 32rem) / (96 - 32)));
+    padding: calc(0.4rem + 1.6 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
@@ -1885,6 +1885,11 @@ footer ul a:hover {
   .main-generic .main-generic-wrapper .main-generic-item:not(:first-child) {
     padding-top: 5rem;
   }
+}
+
+.main-generic .main-generic-wrapper ul {
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
 }
 
 .main-generic .main-generic-wrapper h1 {
