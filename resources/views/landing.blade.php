@@ -73,28 +73,28 @@
         <h1>TESTIMONIAL</h1>
         <div class="main-testimonial-wrapper">
             <div class="main-testimonial-card">
-                <img src="{{URL::asset('assets/iconWishlist.svg')}}">
-                <h2>JOHN DOE</h2>
+                <img src="{{URL::asset('assets/testi1.svg')}}">
+                <h2>HANA HABIBI</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Pellentesque tempus pulvinar molestie. Pellentesque habitant
-                    morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                    Aku sudah menggunakan aplikasi ini selama 6 bulan.
+                    Cara kerjanya simple, sangat mudah untuk pengguna sepertiku.
                 </p>
             </div>
             <div class="main-testimonial-card">
-                <img src="{{URL::asset('assets/iconGrocery.svg')}}">
-                <h2>MARY SUE</h2>
+                <img src="{{URL::asset('assets/testi2.svg')}}">
+                <h2>USYI KUSUMO</h2>
                 <p>
-                    Etiam enim velit, consequat vitae velit non, varius cursus elit. 
-                    Vivamus ut arcu mauris. Sed sodales eu nibh tincidunt laoreet. 
+                    Aplikasi ini sangat praktis!
+                    Saya dan teman-teman sangat sering menggunakan CUS.
+                    Cocok dengan kesibukan kami sebagai mahasiswa.
                 </p>
             </div>
             <div class="main-testimonial-card">
-                <img src="{{URL::asset('assets/iconEstimation.svg')}}">
-                <h2>SHOP DETAILS</h2>
+                <img src="{{URL::asset('assets/testi3.svg')}}">
+                <h2>KAYUN OKTAVIANI</h2>
                 <p>
-                    Nam fermentum ac ex in condimentum. Vivamus eget metus nec metus
-                    bibendum mattis vel egestas nisi. In hac habitasse platea dictumst.
+                    Untuk saya yang memiliki jadwal sangat padat, aplikasi ini sangat cocok untuk saya.
+                    Saya jadi tak perlu menghabiskan waktu untuk mengantri.
                 </p>
             </div>
         </div>
