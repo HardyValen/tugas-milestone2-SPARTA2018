@@ -1,0 +1,20 @@
+$color: map-get($theme-colors, "link");
+a{
+    color: $color;
+    transition: all 0.1s;
+    border-bottom: 1px solid transparent;
+}
+
+a:hover{
+    border-bottom: 1px solid $color;
+}
+
+a::after{
+    content:"\2002\02C3";
+    transition: all 0.1s;
+    opacity: 0;
+}
+
+a:hover::after{
+    opacity: 1;
+}

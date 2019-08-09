@@ -1,0 +1,484 @@
+/* =================================================================== 
+ *
+ *  ITBMUN 2020 Main Stylesheet
+ *  29-07-2019
+ *  ------------------------------------------------------------------
+ *
+ *  TOC:
+ *      # A. Import Modules
+ *      # B. Default Colors
+ *      # C. Navigation Bar
+ *          -- 1. Navbar
+ *          -- 2. Sidebar
+ *      # D. Footer
+ *      # E. Main Sections
+ *          -- 1. Hero
+ *          -- 2. Remarks
+ *          -- 3. Date & Venue
+ *          -- 4. Councils
+ *          -- 5. Supports
+
+ *
+ * =================================================================== */
+
+/* ===================================================================
+ * # A. Import Module
+ * ------------------------------------------------------------------- */
+ @import 'module/math';
+ @import 'module/mixin-fluid';
+ @import 'module/variables';
+ @import 'module/fonts';
+ @import 'module/hamburger';
+ @import 'module/button';
+ @import 'module/shadow';
+
+/* # End of Import Module
+ * ----------------------- */
+
+/* ===================================================================
+ * # B. Default Colors etc
+ * ------------------------------------------------------------------- */
+body {
+    background-color: map-get($theme-colors, "white");
+    color: map-get($theme-colors, "gray-2");
+    font-size:1.6rem;
+}
+
+h1 {
+    color: map-get($theme-colors, "gray-1");
+}
+
+.title {
+    color: map-get($theme-colors, "white");
+}
+
+/* # End of Default Colors
+ * ----------------------- */
+
+/* ===================================================================
+ * # C. Navbar
+ * ------------------------------------------------------------------- */
+#navbar {
+    transition: 0.5s ease-in-out; /* Transition effect when sliding down (and up) */
+}
+
+.navigation{
+    background-color:map-get($theme-colors, "primary");
+    @include shadow(6);
+    position: fixed;
+    width:100%;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+
+    ul {
+        padding-inline-start: 0px;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+        @include fluidmarginx(2rem, 5rem);
+        @include fluidmarginy(2rem, 2rem);
+        
+        @include montserrat();
+        @include fluidfontsize(1.2rem, 1.4rem);
+        font-weight:700;
+        text-transform: uppercase;
+
+        ul.navigation-items{
+            margin: 0;
+            li:not(:first-child)::before{
+                content: "\2003\2003|\2003\2003";
+            }
+
+            @media screen and (max-width:960px){
+                display: none;
+            }
+        }
+
+        .navigation-burger{
+            @media screen and (min-width:960px) {
+                display: none;
+            }
+        }
+
+        li {
+            color: white;
+
+            a {
+                letter-spacing: 1px;
+                border-bottom: 2px solid transparent;
+            }
+
+            .active-nav{
+                border-bottom: 2px solid white;
+            }
+
+            a:hover{
+                border-bottom: 2px solid white;
+            }
+
+            .navigation-logo{
+                @include fluidwidth(5rem, 8rem);
+                @include fluidheight(5rem, 8rem);
+                background: url(../assets/cusLogo.png);
+                background-size: cover;
+            }
+
+            h1 {
+                @include fluidfontsize(2.4rem, 3.6rem);
+                @include futuraMedium();
+            }
+        }
+    }
+}
+
+// 2. -- Sidebar
+.navigation-sidebar{
+    right:-100%;
+    position: fixed;
+    width:100%;
+    min-height:100%;
+    background-color:map-get($theme-colors, "primary");
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: flex-start;
+    z-index: 2001;
+    transition: 0.5s ease-in-out;
+
+    .navigation-sidebar-header{
+        width:100%;
+        top: 0;
+        left: 0;
+        @include fluidheight(10rem, 14rem);
+
+        ul{
+            height:100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            list-style-type: none;
+            @include fluidpaddingx(2rem, 5rem);
+
+            li{
+                h1{
+                    @include fluidfontsize(2.4rem, 2.8rem);
+                    @include futuraBold();
+                    color: white;
+                    text-transform: uppercase;
+                    font-weight:700;
+                }
+            }
+        }
+    }
+
+    .navigation-sidebar-body{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        justify-content: center;
+        @include fluidpaddingy(2rem, 5rem);
+
+        .navigation-items{
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+
+            .navigation-item{
+                @include fluidmarginy(1.4rem, 2.3rem);
+
+                a{
+                    @include montserrat();
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    border-bottom: 2px solid transparent;
+                    letter-spacing: 1px;
+                    transition: all 0.1s;
+                }
+
+                a:hover, .active-nav{
+                    border-bottom: 2px solid white;
+                }
+            }
+        }
+    }
+}
+
+/* # End of Navbar
+ * ----------------------- */
+
+/* ===================================================================
+ * # D. Main Sections
+ * ------------------------------------------------------------------- */
+
+// 1. -- Main Hero
+ .main-hero{
+     min-height: 100%;
+     width:100%;
+     background: url(../assets/bgDesktop.jpg);
+     background-size:cover;
+     background-position-y: 100%;
+     background-repeat: no-repeat;
+     display: flex;
+     align-content: flex-end;
+     align-items: flex-end;
+     justify-content: flex-end;
+     
+     @include fluidpaddingx(2rem, 10rem);
+     @include fluidpaddingy(2.5rem, 6rem);
+
+     @media screen and (max-width: 960px) {
+        min-height: 70%;
+    }
+
+     .main-hero-wrapper{
+         @include fluidminheight(14rem, 20rem);
+         @include fluidpaddingright(0rem, 3rem);
+         @include fluidwidth(28rem, 64rem);
+         display: flex;
+         flex-direction: column;
+         align-items: flex-end;
+         justify-content: space-between;
+         text-align: right;
+         border-right: 3px solid white;
+
+         @media screen and (max-width: 960px){
+             border-right: 3px solid transparent;
+         }
+
+         h1{
+             @include futuraRegular();
+             @include fluidfontsize(3.0rem, 4.8rem);
+             color: white;
+             letter-spacing: 1.6px;
+
+             b{
+                 @include futuraBold();
+                 @include fluidfontsize(3.6rem, 6.4rem);
+             }
+         }
+     }
+ }
+// 2. -- Main About
+ .main-about{
+    min-height: 100%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    @import 'component/header';
+    
+    @include fluidpaddingx(2rem, 10rem);
+    @include fluidpaddingy(6rem, 6rem);
+
+    @media screen and (max-width: 960px) {
+        min-height: 70%;
+    }
+
+    h1{
+        @include h1Main();
+    }
+
+    h2{
+        @include h2Main();
+        color: map-get($theme-colors, "gray-1");
+    }
+
+    .main-about-wrapper{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        line-height: 2;
+
+        .main-about-content{
+            @include fluidpaddingx(2rem, 3rem);
+            @include fluidpaddingy(0rem, 0rem);
+
+            @media screen and (max-width: 960px) {
+                @include fluidpaddingx(0rem, 0rem);
+                @include fluidpaddingy(2rem, 3rem);
+            }
+        }
+
+        @media screen and (max-width: 960px) {
+            flex-direction: column-reverse;
+        }
+    }
+ }
+
+// 3. -- Main Services
+.main-services{
+    min-height: 100%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    @import 'component/header';
+    
+    @include fluidpaddingx(2rem, 10rem);
+    @include fluidpaddingy(6rem, 6rem);
+
+    @media screen and (max-width: 960px) {
+        min-height: 70%;
+    }
+
+    h1{
+        @include h1Main();
+    }
+
+    .main-service-wrapper{
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+
+        .main-service-card{
+            flex: 0 0 auto;
+            width: 23.5%;
+            @include fluidminheight(8rem, 10rem);
+            @include fluidpaddingx(2rem, 2rem);
+            padding-top: 4rem;
+            padding-bottom: 3rem;
+            
+            border: 2px solid map-get($theme-colors, "gray-1");
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 6rem;
+
+            img{
+                margin-top: -11rem;
+            }
+
+            h2{
+                @include h2Main();
+                color: map-get($theme-colors, "gray-1" );
+            }
+
+            p{
+                @include pMain();
+            }
+
+            @media screen and (max-width:960px){
+                width: 24rem;
+            }
+        }
+
+        .main-service-card:not(:first-child){
+            margin-left: 2%;
+
+            @media screen and (max-width:960px){
+                margin-left: 3rem;
+            }
+        }
+    }
+ }
+
+ // 4. -- Main Testimonial
+.main-testimonial{
+    background: linear-gradient(0deg, rgba(60, 60, 60, 0.8), rgba(60, 60, 60, 0.8)), url(../assets/bgTestimonial.jpg);
+    background-size:cover;
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+    min-height: 100%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    @import 'component/header';
+    
+    @include fluidpaddingx(2rem, 10rem);
+    @include fluidpaddingy(6rem, 6rem);
+
+    @media screen and (max-width: 960px) {
+        min-height: 70%;
+    }
+
+    h1{
+        @include h1Main();
+        color: white;
+    }
+
+    .main-testimonial-wrapper{
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+
+        .main-testimonial-card{
+            flex: 0 0 auto;
+            width: 32%;
+            @include fluidminheight(8rem, 10rem);
+            @include fluidpaddingx(2rem, 2rem);
+            padding-top: 4rem;
+            padding-bottom: 3rem;
+            
+            border: 2px solid map-get($theme-colors, "gray-1");
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 6rem;
+            background-color: white;
+
+            img{
+                margin-top: -11rem;
+            }
+
+            h2{
+                @include h2Main();
+                color: map-get($theme-colors, "gray-1" );
+            }
+
+            p{
+                @include pMain();
+            }
+
+            @media screen and (max-width:960px){
+                width: 24rem;
+            }
+        }
+
+        .main-testimonial-card:not(:first-child){
+            margin-left: 2%;
+
+            @media screen and (max-width:960px){
+                margin-left: 3rem;
+            }
+        }
+    }
+ }
+
+// -- 5. Footer
+ footer{
+    min-height: 50%;
+    background-color: map-get($theme-colors, "primary");
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    @include fluidpaddingx(2rem, 2rem);
+    @media screen and (max-width: 960px) {
+        min-height: 40%;
+    }
+
+     p{
+        @include fluidfontsize(1.4rem, 2.4rem);
+        @include futuraMedium;
+        letter-spacing: 1px;   
+     }
+
+     ul{
+         padding-inline-start: 0px;
+         @include fluidwidth(24rem, 36rem);
+         display: flex;
+         justify-content: space-between;
+         list-style-type: none;
+     }
+ }
+
+/* # End of Main Sections
+ * ----------------------- */

@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,700,700i,800,800i|Titillium+Web:300,300i,400,400i,600,600i,700,700i&display=swap');
+// font-family: 'Titillium Web', sans-serif;
+// font-family: 'Montserrat', sans-serif;
+
+@font-face {
+    font-family: 'Futura Md BT Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Futura Md BT Medium'), url('../font/Futura/futuram.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Futura Md BT Medium Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Futura Md BT Medium Italic'), url('../font/Futura/futurami.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Futura Md BT Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Futura Md BT Bold'), url('../font/Futura/futurab.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Futura Md BT Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Futura Md BT Bold Italic'), url('../font/Futura/futurabi.woff') format('woff');
+    }
+    
+    @font-face {
+    font-family: 'Futura Bk BT Book';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Futura Bk BT Book'), url('../font/Futura/futuran.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Futura Bk BT Book Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Futura Bk BT Book Italic'), url('../font/Futura/futurani.woff') format('woff');
+    }
+
+// Silly Mixins karena gua males haha
+// ==================================
+@mixin titilliumWeb() {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+@mixin montserrat() {
+  font-family: 'Montserrat', sans-serif;
+}
+
+@mixin futuraMedium() {
+    font-family: 'Futura Md BT Medium', sans-serif;
+  }
+
+@mixin futuraMediumItalic() {
+    font-family: 'Futura Md BT Medium Italic', sans-serif;
+  }
+
+@mixin futuraBold() {
+    font-family: 'Futura Md BT Bold', sans-serif;
+  }
+
+@mixin futuraBoldItalic() {
+    font-family: 'Futura Md BT Bold Italic', sans-serif;
+  }
+
+@mixin futuraRegular() {
+    font-family: 'Futura Bk BT Book', sans-serif;
+  }
+
+@mixin futuraRegularItalic() {
+    font-family: 'Futura Bk BT Book Italic', sans-serif;
+  }
+
+//mixin for Typography ===============
+@mixin h1Main{
+  @include futuraBoldItalic();
+  @include fluidfontsize(2rem, 2.8rem);
+  @include fluidletterspacing(2px, 2.8px);
+  margin-bottom: 2rem;
+}
+
+@mixin h2Main{
+  @include futuraMedium();
+  @include fluidfontsize(1.6rem, 2.0rem);
+  @include fluidletterspacing(1px, 1.3px);
+  margin-bottom: 1rem;
+}
+
+@mixin pMain{
+  @include futuraRegular();
+  @include fluidfontsize(1.2rem, 1.6rem);
+}
