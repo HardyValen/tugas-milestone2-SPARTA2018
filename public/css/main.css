@@ -1793,6 +1793,77 @@ footer ul a:hover {
   width: 100%;
 }
 
+.main-generic .main-generic-wrapper .main-generic-item .iframe-map {
+  border-radius: 16px;
+  border: 5px solid white;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15), 0px 3px 4px rgba(0, 0, 0, 0.24);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15), 0px 3px 4px rgba(0, 0, 0, 0.24);
+}
+
+.main-generic .main-generic-wrapper .main-generic-item .iframe-map {
+  width: 16rem;
+}
+
+@media screen and (min-width: 320px) {
+  .main-generic .main-generic-wrapper .main-generic-item .iframe-map {
+    width: calc(16rem + 32 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .main-generic .main-generic-wrapper .main-generic-item .iframe-map {
+    width: 48rem;
+  }
+}
+
+.main-generic .main-generic-wrapper .main-generic-item .iframe-map {
+  height: 12rem;
+}
+
+@media screen and (min-width: 320px) {
+  .main-generic .main-generic-wrapper .main-generic-item .iframe-map {
+    height: calc(12rem + 24 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .main-generic .main-generic-wrapper .main-generic-item .iframe-map {
+    height: 36rem;
+  }
+}
+
+.main-generic .main-generic-wrapper .main-generic-item .iframe-map {
+  padding: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .main-generic .main-generic-wrapper .main-generic-item .iframe-map {
+    padding: calc(2rem + 0 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .main-generic .main-generic-wrapper .main-generic-item .iframe-map {
+    padding: 2rem;
+  }
+}
+
+.main-generic .main-generic-wrapper .main-generic-item .iframe-map {
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .main-generic .main-generic-wrapper .main-generic-item .iframe-map {
+    margin-bottom: calc(2rem + 0 * ((100vw - 32rem) / (96 - 32)));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .main-generic .main-generic-wrapper .main-generic-item .iframe-map {
+    margin-bottom: 2rem;
+  }
+}
+
 .main-generic .main-generic-wrapper .main-generic-item:not(:first-child) {
   padding-top: 3rem;
 }
@@ -1899,13 +1970,13 @@ footer ul a:hover {
 
 @media screen and (min-width: 320px) {
   .main-generic .main-generic-wrapper .image {
-    width: calc(16rem + 12 * ((100vw - 32rem) / (96 - 32)));
+    width: calc(16rem + 16 * ((100vw - 32rem) / (96 - 32)));
   }
 }
 
 @media screen and (min-width: 960px) {
   .main-generic .main-generic-wrapper .image {
-    width: 28rem;
+    width: 32rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

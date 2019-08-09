@@ -138,6 +138,16 @@ footer{
 
         .main-generic-item{
             width:100%;
+
+            .iframe-map{
+                @include fluidwidth(16rem, 48rem);
+                @include fluidheight(12rem, 36rem);
+                @include fluidpadding(2rem, 2rem);
+                @include fluidmarginbottom(2rem, 2rem);
+                border-radius: 16px;
+                border: 5px solid white;
+                @include shadow(4);
+            }
         }
 
         .main-generic-item:not(:first-child){
@@ -155,7 +165,7 @@ footer{
             @include futuraRegular();
             @include fluidfontsize(1.6rem, 2.4rem);
             @include fluidletterspacing(1.6px, 2.4px);
-            color: map-get($theme-colors, "gray-1" )
+            color: map-get($theme-colors, "gray-1")
         }
 
         b{
@@ -163,7 +173,7 @@ footer{
         }
 
         .image{
-            @include fluidwidth(16rem, 28rem);
+            @include fluidwidth(16rem, 32rem);
         }
     }
 }
