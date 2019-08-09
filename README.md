@@ -1,15 +1,15 @@
 # tugas-milestone2-SPARTA2018
 ## TUGAS MILESTONE 2 SPARTA HMIF ITB 2018 - WEBSITE CUS
 
-Proyek yang telah kami susun ini adalah sebuah website untuk aplikasi CUS. Website ini ditujukan untuk membentuk suatu web presence terhadap perusahaan CUS. Website ini bersifat statis, sehingga tujuan utama dari dibuatnya website ini tidak lain adalah mengenalkan perusahaan CUS kepada masyarakat luas dan membenarkan pandangan yang salah pada masyarakat mengenai CUS. Website ini memiliki berbagai bagian, seperti landing page, halaman about us, halaman terms of use, halaman kontak pemilik perusahaan, dan halaman yang bisa mengalihkan website ke Google Play. Selain itu, di bagian header terdapat link yang menuntun pada akun resmi perusahaan.
+Proyek yang kami buat ini adalah sebuah website untuk aplikasi CUS. Website ini ditujukan untuk membentuk suatu web presence terhadap perusahaan yang kami beri bantuan yaitu CUS. Website ini bersifat statis, sehingga tujuan utama dari dibuatnya website ini tidak lain adalah mengenalkan perusahaan CUS kepada masyarakat luas dan membenarkan pandangan yang salah pada masyarakat mengenai CUS. Website ini memiliki berbagai bagian, seperti landing page, halaman about us, halaman terms of use, halaman kontak pemilik perusahaan, dan halaman yang bisa mengalihkan website ke Google Play. Selain itu, di bagian header terdapat link yang menuntun pada akun resmi perusahaan.
 
 ### Get Started
 
-Untuk menggunakan website ini dan mengubahnya, pengguna akan membutuhkan beberapa aplikasi, seperti Laravel. Laravel sendiri membutuhkan aplikasi lain berupa XAMPP dan Composer. Setelah Laravel sudah tersedia, maka akan dibutuhkan NPM yang bisa diunduh dengan command prompt. Selain itu, duplikasi .env file dan pembuatan kunci enkripsi dengan php artisan juga dibutuhkan untuk menjalankan program. Web yang kami buat bersifat statis, oleh karena itu web kami hanya terdiri atas front-end dalam pembuatannya. Selain itu, dalam pembuatannya, kami menggunakan Visual Studio Code untuk mengubah kode.
+Untuk menggunakan website ini dan mengubah isinya, pengguna akan membutuhkan aplikasi Laravel. Laravel sendiri membutuhkan aplikasi lain berupa XAMPP dan Composer. Setelah Laravel sudah tersedia, maka akan dibutuhkan NPM yang bisa diunduh dengan command prompt. Selain itu, duplikasi .env file dan pembuatan kunci enkripsi dengan php artisan juga dibutuhkan untuk menjalankan program. Web yang kami buat bersifat statis, oleh karena itu web kami hanya terdiri atas front-end dalam pembuatannya. Selain itu, dalam pembuatannya, kami menggunakan Visual Studio Code untuk mengubah kode.
 
 ### PREREQUISITES
 
-Untuk meng-install program atau website ini ke dalam perangkat yang dimiliki oleh pengguna, pengguna membutuhkan beberapa aplikasi, seperti Laravel, PHP yang bisa didapat dengan menggunakan XAMPP, dan NPM. NPM dibutuhkan untuk menjalankan website yang didapat dari github dengan clone. PHP digunakan untuk menjalankan kode program dan mengedit kode program. Laravel digunakan sebagai framework dasar yang kami gunakan untuk membuat website. XAMPP digunakan untuk membuat sebuah server yang dapat berdiri sendiri. 
+Untuk menjalankan program atau website ini menggunakan perangkat yang dimiliki oleh pengguna, pengguna membutuhkan beberapa aplikasi, seperti Laravel, PHP yang bisa didapat dengan menggunakan XAMPP, dan NPM. NPM dibutuhkan untuk menjalankan website yang didapat dari github dengan clone. PHP digunakan untuk menjalankan kode program dan mengedit kode program. Laravel digunakan sebagai framework dasar yang kami gunakan untuk membuat website. XAMPP digunakan untuk membuat sebuah server yang dapat berdiri sendiri. 
 
 ### INSTALLING
 
@@ -17,10 +17,10 @@ Berikut adalah langkah-langkah untuk menginstall website yang kami buat hingga p
 1. Unduh Aplikasi XAMPP
 Aplikasi XAMPP dapat diperoleh di website apache friends, yaitu https://www.apachefriends.org/ . Setelah installer XAMPP diunduh dari web tersebut, jalankan installer tersebut. Disarankan untuk tidak mengubah lokasi default dari lokasi install yang diajukan oleh aplikasi.
 2. Uji coba XAMPP
-Setelah XAMPP diinstall, jalankan uji coba pada XAMPP dengan menjalankan aplikasi XAMPP dan tekan tombol start pada server Apache dan MySQL. Jika aplikasi dapat berjalan dengan baik, maka PHP akan terinstall pada lokasi di dalam folder utama XAMPP.
+Setelah XAMPP berhasil di-install pada perangkat pengguna, jalankan uji coba pada XAMPP dengan menjalankan aplikasi XAMPP dan tekan tombol start pada server Apache dan MySQL. Jika aplikasi dapat berjalan dengan baik, maka PHP akan terinstall pada lokasi di dalam folder utama XAMPP.
 3. Unduh dan Install aplikasi Composer
 Setelah XAMPP telah ter-install dan dapat dijalankan, Composer dapat mulai di-install. Proses instalasi Composer dapat dimulai dengan cara mengunduh aplikasi instalasi Composer pada situs Composer, yaitu https://getcomposer.org . Setelah aplikasi instalasi Composer telah terunduh, jalankan aplikasi instalasi Composer dan ikuti petunjuk untuk memasang aplikasi Composer di komputer.
-Saat melakukan instalasi, file php.exe akan diminta oleh aplikasi instalasi Composer. File php.exe ini dapat ditemukan pada folder aplikasi XAMPP yang telah dipasang sebelumnya. File ini dapat diakses pada alamat file /XAMPP/php/php.exe . Setelahnya, ikuti arahan yang terdapat pada aplikasi instalasi Composer hingga aplikasi Composer berhasil terpasang pada komputer.
+Saat melakukan instalasi, file php.exe akan diminta oleh aplikasi instalasi Composer. File php.exe ini dapat ditemukan pada folder aplikasi XAMPP yang telah dipasang sebelumnya. File ini dapat diakses pada direktori file /XAMPP/php/php.exe . Setelahnya, ikuti arahan yang terdapat pada aplikasi instalasi Composer hingga aplikasi Composer berhasil terpasang pada komputer.
 4. Unduh Laravel
 Setelah Composer terinstall, lakukan tahapan pengunduhan Laravel. Di dalam direktori htdocs yang terdapat di dalam XAMPP, buka cmd pada direktori tersebut dan ketikkan “composer create-project --prefer-dist laravel/laravel (nama proyek)”. Setelah itu, Laravel akan terinstall dalam beberapa waktu. Setelah itu, jalankan web dengan mengetik “php artisan serve” pada cmd yang sama. Setelah itu, akan muncul port pada cmd. Setelah proses ini, jangan menutup cmd. Pada web, ketikkan “localhost:(angka port)” dan jalankan. Jika sukses, maka akan muncul web dengan tulisan Laravel.
 5. Clone Repository ini
@@ -28,19 +28,19 @@ Jika pengguna tidak memiliki Git Bash atau akun GitHub, maka pengunduhan dapat d
 git init
 git clone <url>
 6. Install dependencies framework laravel dengan composer
-Setelah file berhasil didownload, lakukan install composer dengan mengetik pada cmd pada direktori file dengan mengetik “composer install”. Setelah itu, tunggulah beberapa saat hingga composer berhasil terinstall pada direktori tersebut. Sangat disarankan untuk tidak menutup panel cmd setelah Composer terinstall.
+Setelah file berhasil diunduh, lakukan install Composer dengan mengetik “composer install” pada cmd di direktori file. Setelah itu, tunggulah beberapa saat hingga composer berhasil terinstall pada direktori tersebut. Sangat disarankan untuk tidak menutup panel cmd setelah Composer terinstall.
 7. Install dependencies lainnya dengan NPM
 Dependencies yang memerlukan NPM dapat diinstall dengan mengetikkan “npm install” pada cmd dengan direktori yang sama dengan direktori sebelumnya. NPM akan membutuhkan beberapa waktu untuk terinstall. Jika NPM sudah terinstall dengan baik, maka cmd dapat menerima perintah lain.
 8. Duplikasi file .env
-File .env dapat diduplikasi dengan mengetikkan perintah di command prompt. Perintah yang dituliskan pada Command prompt adalah “cp .env.example .env”. Setelah itu, command prompt akan meminta perintah lain. Hal ini menandakan bahwa file .env berhasil diduplikasi.
+File .env dapat diduplikasi dengan mengetikkan perintah di command prompt. Perintah yang diketikkan pada command prompt adalah “cp .env.example .env”. Setelah itu, command prompt akan meminta perintah lain. Hal ini menandakan bahwa file .env berhasil diduplikasi.
 9. Tambahkan penjagaan enkripsi pada file
 Penjagaan enkripsi dilakukan dengan mengetikkan perintah “php artisan key:generate” pada Command Prompt. Setelah perintah ini diketikkan, maka perintah tidak akan memakan waktu lama untuk dijalankan. Jika perintah sudah selesai dijalankan, command prompt dapat menerima perintah lain.
 10. Jalankan file
-Berkas yang telah diunduh disertai dengan Laravel akan menjalankan kode program menjadi suatu situs yang bekerja dengan baik. Untuk menjalankan situs tersebut, bukalah Command Prompt pada berkas yang telah diunduh dan tuliskan perintah “php artisan serve” pada Command Prompt dan jalankan perintah tersebut. Setelah itu,  bukalah web browser dan ketikkan “localhost:(port)”. Situs dinyatakan berjalan jika situs terbuka dengan baik.
+Berkas yang telah diunduh disertai dengan Laravel akan menjalankan kode program menjadi suatu situs yang bekerja dengan baik. Untuk menjalankan situs tersebut, bukalah command prompt pada berkas yang telah diunduh dan tuliskan perintah “php artisan serve” pada command prompt dan jalankan perintah tersebut. Setelah itu,  bukalah web browser dan ketikkan “localhost:(port)”. Situs dinyatakan berjalan jika situs terbuka dengan baik.
     
 ### RUNNING THE TEST
 
-Pada dasarnya, tes yang terotomasi tidak dapat dilakukan. Cara untuk mengetes keberjalanan situs yang telah dibuat adalah dengan membuka situs yang telah kami buat. Jika situs yang telah dibuat sebelumnya dapat dibuka dan tampilan situs sudah sesuai dengan harapan, maka uji coba situs berhasil. Jika terdapat error pada keberjalanan situs, maka dapat dikatakan bahwa masih terdapat kesalahan pada pembuatan situs, sehingga akan dicari kesalahan dalam kode untuk diperbaiki.
+Pada dasarnya, tes yang terotomasi tidak dapat dilakukan. Cara untuk mengetes keberjalanan situs yang telah dibuat adalah dengan membuka situs yang telah dibuat secara manual. JIka situs yang telah dibuat sebelumnya dapat terbuka dengan baik dan tampilan situs sudah sesuai dengan harapan, maka uji jalan situs berhasil. Jika terdapat error pada keberjalanan situs, maka dapat dikatakan bahwa masih terdapat kesalahan pada pembuatan situs.
 
 ### DEPLOYMENT
 
@@ -59,9 +59,10 @@ http://peaceful-dusk-28494.herokuapp.com/landing
 4. SCSS - CSS Compiler
 5. HTML
 
+
 ### CONTRIBUTING
 
-Pada dasarnya, kami terbuka pada kontribusi lain yang asalnya dari luar kelompok kami. Selain itu, pengguna yang ingin berkontribusi pada pengembangan situs ini dapat mulai dengan belajar terlebih dahulu mengenai pengembangan situs. Selain itu, sangat disarankan bagi pengguna yang ingin berkontribusi lebih lanjut pada situs ini untuk mengunduh dan menginstal XAMPP, Composer, dan Laravel yang sesuai dengan spesifikasi perangkat pengguna
+Pada dasarnya, kami terbuka pada kontribusi lain yang berasal dari luar kelompok kami. Selain itu, pengguna yang ingin berkontribusi pada pengembangan situs ini dapat mulai dengan belajar terlebih dahulu mengenai pengembangan situs. Selain itu, sangat disarankan bagi pengguna yang ingin berkontribusi lebih lanjut pada situs ini untuk mengunduh XAMPP, Composer, dan Laravel yang bekerja dengan baik pada perangkat yang pengguna tersebut gunakan.
 
 ### VERSIONING
 
