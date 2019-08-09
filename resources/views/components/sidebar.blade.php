@@ -29,7 +29,7 @@ function closeNav() {
     document.querySelector(".navigation-sidebar").style.right = "-100%";
 }
 
-const hrefsSidebar = document.querySelectorAll(".navigation-sidebar-body .navigation-items .navigation-item a");
+const hrefsSidebar = document.querySelectorAll(".navigation-sidebar-body ul li a");
 const urlStringSidebar = window.location.href;
 
 hrefsSidebar.forEach(link => {
@@ -38,7 +38,7 @@ hrefsSidebar.forEach(link => {
     var headerLink = urlStringSidebar.substr(firstLocation, link.length);
 
     if (hrefLink === headerLink){
-        document.querySelector(".navigation-sidebar-body .navigation-items .navigation-item a[href='"+hrefLink+"']").classList.add('active-nav');
+        document.querySelector(".navigation-sidebar-body ul li a[href='"+hrefLink+"']").classList.add('active-nav');
     }
 })
 </script>
