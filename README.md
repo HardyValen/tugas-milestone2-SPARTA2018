@@ -53,7 +53,7 @@ diinisialisasi dalam repository Git dan  pengguna harus log in terlebih dahulu d
 
 Website yang telah berhasil di deploy dapat diakses melalui link berikut
 
-       http://peaceful-dusk-28494.herokuapp.com/landing
+   http://peaceful-dusk-28494.herokuapp.com/landing
 
 ### BUILT WITH
 
