@@ -45,12 +45,15 @@ Pada dasarnya, tes yang terotomasi tidak dapat dilakukan. Cara untuk mengetes ke
 ### DEPLOYMENT
 
 Untuk men-deploy website ke server, kelompok memanfaatkan layanan Heroku sesuai dengan langkah pada
-* https://appdividend.com/2018/04/17/how-to-deploy-laravel-project-on-heroku/#Deploy_Laravel_Project_On_Heroku
+
+   https://appdividend.com/2018/04/17/how-to-deploy-laravel-project-on-heroku/#Deploy_Laravel_Project_On_Heroku
+
 Prosedur ini membutuhkan Laravel, Git, serta Heroku CLI telah diinstal pada perangkat agar bisa dijalankan. Proyek yang ada akan
 diinisialisasi dalam repository Git dan  pengguna harus log in terlebih dahulu dalam Heroku. 
 
 Website yang telah berhasil di deploy dapat diakses melalui link berikut
-*       http://peaceful-dusk-28494.herokuapp.com/landing
+
+       http://peaceful-dusk-28494.herokuapp.com/landing
 
 ### BUILT WITH
 
