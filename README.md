@@ -66,48 +66,48 @@ Pada dasarnya, kami terbuka pada kontribusi lain yang berasal dari luar kelompok
 
 ### VERSIONING
 
-0.1.0 - Laravel Installed 
-0.1.1 - installed npm and laravel dependencies
-0.1.2.1 - Created base.scss for normalization purpose
-0.1.2.2 - Created base templating for SCSS
-0.1.2.3 - Created base templating for laravel blade view
-0.2.0
-    Created main.scss, a template for web styling
-    Created module folder for storing SCSS mixins
-        _variable.scss for theme color
-        _fonts.scss for include futura font on the web
-        _buttons.scss for styling all buttons
-        _elevation-shadow.scss for drop shadow mixin
-        _hamburger.scss for burger navigation icon
-        _math.scss for mathematical functions required on _mixin-fluid.scss
-        _mixin-fluid.scss for a function that uses fluid graphing for responsive web
-    Created assets folder on public for storing images
-    Created font folder on public for storing font type
-        Google Fonts: Helvetica Neue, Titillium Web
-        Local Fonts: Futura
-0.2.1
-    Created Blocks folder on public/css folder for importing purpose and modulation
-        Landing Folder for css modulations
-        _navbar.scss for navbar styling
-        _sidebar.scss for sliding sidebar overlay menu
-    Created Component folder on public/css folder for base styling css such as customizing anchor element on html.
-        _header.scss for be imported as @include ‘component/header’
-0.2.2
-    Edited routes/web.php
-        Changed the get route of “/” from resources/views/welcome.blade.php to “/landing”
-        Added the get route of “/landing” to view resources/views/landing.blade.php
-        Added the get route of “/about” to view resources/views/about.blade.php
-        Added the get route of “/contact” to view resources/views/contact.blade.php
-        Added the get route of “/products” to view resources/views/products.blade.php
-0.3.0 - resources/views update
-    Created views file for web content
-        Created resources/views/about.blade.php
-        Created resources/views/contact.blade.php
-        Created resources/views/landing.blade.php
-        Created resources/views/products.blade.php
-    Created template folder for views
-        Created resources/views/template/skeleton.blade.php
-1.0.0 - Final, Ready to deploy
+* 0.1.0 - Laravel Installed 
+* 0.1.1 - installed npm and laravel dependencies
+* 0.1.2.1 - Created base.scss for normalization purpose
+* 0.1.2.2 - Created base templating for SCSS
+* 0.1.2.3 - Created base templating for laravel blade view
+* 0.2.0
+    * Created main.scss, a template for web styling
+    * Created module folder for storing SCSS mixins
+       * _variable.scss for theme color
+       * _fonts.scss for include futura font on the web
+       * _buttons.scss for styling all buttons
+       * _elevation-shadow.scss for drop shadow mixin
+       * _hamburger.scss for burger navigation icon
+       * _math.scss for mathematical functions required on _mixin-fluid.scss
+       * _mixin-fluid.scss for a function that uses fluid graphing for responsive web
+    * Created assets folder on public for storing images
+    * Created font folder on public for storing font type
+        * Google Fonts: Helvetica Neue, Titillium Web
+        * Local Fonts: Futura
+* 0.2.1
+   * Created Blocks folder on public/css folder for importing purpose and modulation
+        * Landing Folder for css modulations
+        * _navbar.scss for navbar styling
+        * _sidebar.scss for sliding sidebar overlay menu
+   * Created Component folder on public/css folder for base styling css such as customizing anchor element on html.
+        * _header.scss for be imported as @include ‘component/header’
+* 0.2.2
+    * Edited routes/web.php
+       * Changed the get route of “/” from resources/views/welcome.blade.php to “/landing”
+       * Added the get route of “/landing” to view resources/views/landing.blade.php
+       * Added the get route of “/about” to view resources/views/about.blade.php
+       * Added the get route of “/contact” to view resources/views/contact.blade.php
+       * Added the get route of “/products” to view resources/views/products.blade.php
+* 0.3.0 - resources/views update
+    * Created views file for web content
+       * Created resources/views/about.blade.php
+       * Created resources/views/contact.blade.php
+       * Created resources/views/landing.blade.php
+       * Created resources/views/products.blade.php
+    * Created template folder for views
+       * Created resources/views/template/skeleton.blade.php
+* 1.0.0 - Final, Ready to deploy
 
 ### AUTHORS
 
